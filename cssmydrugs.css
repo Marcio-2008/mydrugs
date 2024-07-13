@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+padding: 0;
+margin: 0;
+border: none;
+text-decoration: none;
+outline: none;
+box-sizing: border-box;
+}
+body {
+background-color: rgba(8,0,15,0.939);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+/* estila o cabeçalho do site*/
+.header-mydrugs {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #040106;
+padding: 10px;
+margin-bottom: 30px;
+box-shadow: 0 12px 22px #000;
+}
+.header-mydrugs > .link-logo-mydrugs > .logo-mydrugs {
+height: 30px;
+width: 30px;
+}
+.header-mydrugs > .h1-mydrugs {
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 0 16px white;
+  transition: transform ease-out 0.9s;
+}
+.h1-mydrugs:hover {
+ transform: scale(1.1);
+}
+.header-mydrugs > .h1-mydrugs > .span-drug {
+font-size: 20px;
+text-shadow: 0 0 16px white;
+}
+.header-mydrugs > .fa-solid {
+color: white;
+font-size: 30px;
+}
+/* estilização da parte principal */ 
+.main-content {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+padding: 20px;
+}
+.main-content > .content1 > .mydrugs-p {
+color: rgb(255,30,30);
+font-size: 17px;
+font-family: "Pacifico", cursive;
+font-style: normal;
+font-weight: 600;
+border-left: solid 2px white;
+padding-left: 8px;
+  text-shadow: 0 0 16px rgb(255,30,30);
+}
+.main-content > .content1 > .mydrugs-h2 {
+color: white;
+font-size: 40px;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: italic;
+}
+.main-content > .parag-content {
+color: white;
+font-size: 18px;
+margin-top: 10px;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: italic;
+text-align: justify;
+}
+.scroll-bar-drugs {
+width: 100%;
+height: 90px;
+border: 2px dashed  rgb(255,30,30);
+border-radius: 9px;
+margin: 20px 0 15px 0;
+padding: 0 25px;
+box-shadow: 0 0 16px rgb(255,30,30);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+white-space: nowrap;
+flex-direction: row;
+gap: 20px;
+overflow: auto;
+}
+.scroll-bar-drugs > .div-img-drug {
+height: 60px;
+width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 2px;
+margin: 0 15px;
+}
+.div-img-drug > .link-mydrugs > .img-drug {
+height: 50px;
+width: 50px;
+filter: brightness(1.5 );
+filter: saturate(150%);
+filter: contrast(180%);
+transition: transform ease-out 0.5s;
+}
+.div-img-drug > .link-mydrugs > .img-drug:hover {
+transform: scale(1.2);
+}
+.div-img-drug > .name-drug {
+color: white;
+font-size: 12px;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+}
+/* fim da parte principal */
+/* section avaliações */
+.avaliations {
+width: 100%;
+height: auto;
+padding: 0 20px;
+}
+.avaliations > .h1-title {
+text-align: center;
+color: #fff;
+margin-bottom: 6px;
+text-transform: uppercase;
+font-family: "Poppins", Sans-Serif;
+font-weight: 800;
+}
+/* estiliza os elementos dentro da section */
+.avaliations > .div-section {
+width: 100%;
+height: 90%;
+background-color: #201b2a;
+border-radius: 10px;
+display: flex;
+justify-content: left;
+flex-direction: column;
+padding: 20px;
+gap: 25px;
+}
+.div-section > .row1 {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.div-section > .row1 > .img-avl {
+height: auto;
+width: 33.33%;
+border-radius: 9px;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 4px;
+background-color: #30213ed6;
+box-shadow: 0 0 14px  #331a51;
+transition: transform ease-out 0.7s,
+border ease-out 0.7s;
+}
+.div-section > .row1 > .img-avl:hover  {
+transform: scale(1.1);
+border: solid 2px white;
+border-radius: 9px;
+}
+.row1 > .img-avl > .img-drug-avl {
+height: 55px;
+width: 55px;
+transform: rotate(-10deg);
+filter: brightness(1.5 );
+filter: saturate(150%);
+filter: contrast(180%);
+}
+.row1 > .img-avl > .rotate-class {
+transform: rotate(-380deg);
+}
+
+.row1 > .img-avl > .preco {
+color: white; 
+font-size: 13px;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+text-align: center;
+}
+.row1 > .img-avl > .nota {
+font-size: 14px;
+text-shadow: 0 0 6px #8b8f00;
+color: yellow;
+}
+.row1 > .img-avl  > .button-purchase {
+width: 100%;
+height: 25px;
+border-radius: 2px;
+background-color: rgb(255,30,30);
+box-shadow: 0 0 4px rgb(255,30,30) ;
+text-transform: uppercase;
+color: white;
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+}
+/* estilização do footer */
+.footer-end {
+width: 90%;
+height: 250px;
+margin: 20px 0 20px 0;
+padding: 20px;
+background-color: #201b2a;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+.footer-end > .icons-social {
+width: 40px;
+height: auto;
+background-color: #30213ed6;
+padding: 10px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+gap: 8px;
+cursor: pointer;
+}
+.footer-end > .icons-social > .link-social {
+color: white;
+font-size: 22px;
+text-shadow: 0 0 3px white ;
+cursor: pointer;
+}
+.footer-end > .p-footer {
+color: white;
+text-align: justify;
+font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: italic;
+font-size: 18px;
+}
+.p-footer > .ilovecodar {
+font-style: normal;
+text-shadow: 0 0 9px red;
+}
